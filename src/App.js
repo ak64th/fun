@@ -1,11 +1,13 @@
 import React from 'react';
 import {hot} from 'react-hot-loader';
+import {normalize} from 'styled-normalize';
 import styled, {injectGlobal, keyframes} from 'styled-components';
 import logo from './logo.svg';
 
 injectGlobal`
+  ${normalize}
+
   body {
-    margin: 0;
     padding: 0;
     font-family: sans-serif;
   }
