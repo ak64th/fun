@@ -41,7 +41,7 @@ const Intro = styled.p`
 `;
 
 const Link = styled.a`
-  color: #61dafb;      
+  color: #61dafb;
 `;
 
 const Code = styled.code`
