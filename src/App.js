@@ -53,24 +53,24 @@ const Code = styled.code`
 
 
 const App = () => {
-    return (
-        <Wrapper>
-            <Header>
-                <Logo src={logo} alt="logo"/>
-                <Title>Welcome to React</Title>
-            </Header>
-            <Intro>
-                To get started, edit <Code>src/App.js</Code> and save to reload.
-            </Intro>
-            <Link
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Learn React
-            </Link>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>
+        <Logo src={logo} alt="logo"/>
+        <Title>Welcome to React</Title>
+      </Header>
+      <Intro>
+        To get started, edit <Code>src/App.js</Code> and save to reload.
+      </Intro>
+      <Link
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </Link>
+    </Wrapper>
+  );
 };
 
 export default hot(module)(App);
