@@ -11,7 +11,7 @@ describe('App', () => {
 
   it('renders header with correct styles', () => {
     const tree = mount(<App/>);
-    const header = tree.find(Header);
+    const header = tree.find('div').at(1);
     expect(header).toHaveLength(1);
     expect(header).toHaveStyleRule('background-color', '#222');
     expect(header).toHaveStyleRule('height', '150px');
