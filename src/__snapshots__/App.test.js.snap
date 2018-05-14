@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+.c0 {
+  text-align: center;
+}
+
+.c1 {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.c2 {
+  -webkit-animation: iVXCSc infinite 20s linear;
+  animation: iVXCSc infinite 20s linear;
+  height: 80px;
+}
+
+.c3 {
+  font-size: 1.5em;
+}
+
+.c4 {
+  font-size: large;
+}
+
+.c6 {
+  color: #61dafb;
+}
+
+.c5 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+<App>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.img
+            alt="logo"
+            src="logo.svg"
+          >
+            <img
+              alt="logo"
+              className="c2"
+              src="logo.svg"
+            />
+          </styled.img>
+          <styled.h1>
+            <h1
+              className="c3"
+            >
+              Welcome to React
+            </h1>
+          </styled.h1>
+        </div>
+      </styled.div>
+      <styled.p>
+        <p
+          className="c4"
+        >
+          To get started, edit 
+          <styled.code>
+            <code
+              className="c5"
+            >
+              src/App.js
+            </code>
+          </styled.code>
+           and save to reload.
+        </p>
+      </styled.p>
+      <styled.a
+        href="https://reactjs.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <a
+          className="c6"
+          href="https://reactjs.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Learn React
+        </a>
+      </styled.a>
+    </div>
+  </styled.div>
+</App>
+`;
