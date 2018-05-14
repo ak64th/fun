@@ -1,17 +1,8 @@
 import React from 'react';
 import {hot} from 'react-hot-loader';
-import {normalize} from 'styled-normalize';
-import styled, {injectGlobal, keyframes} from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import logo from './logo.svg';
-
-injectGlobal`
-  ${normalize}
-
-  body {
-    padding: 0;
-    font-family: sans-serif;
-  }
-`;
+import './global-styles';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -74,3 +65,4 @@ const App = () => {
 };
 
 export default hot(module)(App);
+export {Header, Intro};

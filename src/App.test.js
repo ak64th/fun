@@ -1,9 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import {mount} from 'enzyme';
+import App, {Header} from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App/>, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('App', () => {
+  it('renders correctly', () => {
+    const tree = mount(<App/>);
+    expect(tree).toMatchSnapshot();
+    expect(tree).toHaveStyleRule('text-align', 'center');
+  });
+
+  it('renders header with correct styles', () => {
+    const tree = mount(<App/>);
+    const header = tree.find(Header);
+    expect(header).toHaveLength(1);
+    expect(header).toHaveStyleRule('background-color', '#222');
+    expect(header).toHaveStyleRule('height', '150px');
+    expect(header).toHaveStyleRule('padding', '20px');
+    expect(header).toHaveStyleRule('color', 'white');
+  });
 });
