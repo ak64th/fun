@@ -44,16 +44,11 @@ exports[`App renders correctly 1`] = `
         <div
           className="c1"
         >
-          <styled.img
-            alt="logo"
-            src="logo.svg"
-          >
-            <img
-              alt="logo"
+          <styled.logo.svg>
+            <logo.svg
               className="c2"
-              src="logo.svg"
             />
-          </styled.img>
+          </styled.logo.svg>
           <styled.h1>
             <h1
               className="c3"

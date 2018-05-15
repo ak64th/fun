@@ -20,7 +20,7 @@ const Spin = keyframes`
   to { transform: rotate(360deg); }
 `;
 
-const Logo = styled.img`
+const Logo = styled(logo)`
   animation: ${Spin} infinite 20s linear;
   height: 80px;
 `;
@@ -47,7 +47,7 @@ const App = () => {
   return (
     <Wrapper>
       <Header>
-        <Logo src={logo} alt="logo"/>
+        <Logo/>
         <Title>Welcome to React</Title>
       </Header>
       <Intro>
