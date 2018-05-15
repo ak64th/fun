@@ -17,5 +17,7 @@ describe('App', () => {
     expect(header).toHaveStyleRule('height', '150px');
     expect(header).toHaveStyleRule('padding', '20px');
     expect(header).toHaveStyleRule('color', 'white');
+    const title = header.find('h1').first();
+    expect(title).toHaveStyleRule('font-size', '1.5em');
   });
 });
